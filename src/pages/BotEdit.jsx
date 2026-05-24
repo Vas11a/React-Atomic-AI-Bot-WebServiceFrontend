@@ -237,6 +237,7 @@ export default function BotEdit() {
                     name="widget_color"
                     value={form.widget_color}
                     onChange={handleChange}
+                    onInput={handleChange}
                     className="box-border h-10 w-10 cursor-pointer rounded border border-line bg-surface p-0.5"
                     required
                   />
@@ -248,6 +249,7 @@ export default function BotEdit() {
                     name="widget_text_color"
                     value={form.widget_text_color}
                     onChange={handleChange}
+                    onInput={handleChange}
                     className="box-border h-10 w-10 cursor-pointer rounded border border-line bg-surface p-0.5"
                     required
                   />
@@ -255,6 +257,7 @@ export default function BotEdit() {
               </div>
             </div>
             <WidgetEmbedPreview
+              defaultChatOpen
               bgColor={form.widget_color}
               textColor={form.widget_text_color}
               iconText={form.widget_icon}
