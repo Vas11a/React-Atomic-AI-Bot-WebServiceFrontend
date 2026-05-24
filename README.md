@@ -18,13 +18,19 @@ The project is built on a service-oriented architecture; this component serves a
 ### Commands
 
 1. Install dependencies
+   ```
    npm install
+   ```
 2. Add .env file with the same variables as in .env.example
 
 3. Run frontend project
 
 - development mode
+  ```
   npm run dev
+  ```
 - production mode (static build + local preview)
+  ```
   npm run build
   npm run preview
+  ```
